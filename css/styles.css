@@ -1,0 +1,125 @@
+
+#menu_text{
+	margin: 0;
+}
+#menu_text{
+	color:red ;
+	text-align: center;
+	background-color: #1abc9c;
+	padding:80px;
+}
+
+nav{
+	background-color: blue;
+	overflow: hidden;
+	
+}
+nav a{
+	color:white;
+	display: block;
+	text-align: center;
+	padding:14px 20px ;
+	text-decoration: none;
+}
+nav a.menu_left{
+	float:left;
+}
+nav a.menu_right{
+	float:right;
+}
+nav a:hover{
+	background-color:#e4f268;
+	color:#ca95db;
+}
+#left_side{
+	flex:30%;
+	background-color:#ca95db ;
+	padding:10px 20px  ;
+}
+#right_side{
+	flex:70%;
+	/*background-color:#423 ;*/
+	padding:10px 20px  ;
+}
+#flex_container{
+	display:flex;
+	flex-wrap:nowrap;
+}
+footer{
+	background-color: #333;
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	padding:10px 20px  ;
+}
+footer a{
+	color:white;
+	text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+}
+
+table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white; 
+}
+#course_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+} 
+
+.course_item{
+	/*background-color: blue;*/
+	text-align: center;
+	color:#333;
+	flex: 0 0 32%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+	
+}
+.course_title{
+	font-weight:bold;
+	font-size: 24px;
+	padding:10px 10px 5px 10px;
+
+}
+.course_desc{
+	margin:2px 4px 7px 2px;
+	font-size: 20px;
+}
+.course_img{
+	width:90%;
+}
+@media(max-width:800px){
+	*{
+		background-color:red;
+	}
+	#left_side{	
+		flex:100;
+		/*#left_side & #right_side hiển thị dạng cột dọc.*/
+	}
+	#right_side{
+		flex:100;
+	}
+	#flex_container{
+		flex-wrap:wrap;
+	}
+	.course_item {
+        flex: 0 0 48%; /* hoặc 49% */
+    }
+
+}
